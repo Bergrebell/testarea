@@ -10,4 +10,8 @@ class RequestExampleController < ApplicationController
     render text: "Thanks for sending a POST request with cURL! Payload: #{request.body.read}"
   end
 
+  def create
+    render json: params
+  end
+
 end

@@ -1,17 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title>Index</title>
-</head>
-<body>
-    <h1>Welcome to the Index File</h1>
+<h1>Welcome to Index</h1>
 
-    <form action="index" method="POST">
-      <input type="text" name="product[name]" value="Responsive Web Design with HTML5 and CSS3"/>
-      <input type="text" name="product[sku]" value="1849693188"/>
-      <input type="text" name="product[publisher]" value="Packt Publishing (April 10, 2012)"/>
-    </form>
+<form action="/request" method="GET">
+  <input type="text" name="my_data">
+  <input type=submit>
+</form>
 
-</body>
-</html>
+<form action="/request" method="GET">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br>
+  <input type="submit" value="Submit">
+</form>
