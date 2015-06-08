@@ -13,5 +13,9 @@ Rails.application.routes.draw do
   match '/request' => 'request_example#create', via: :post
   match '/request' => 'request_example#create', via: :get
 
+  # example from http://www.hashcode.eti.br/?p=481
+  match '/product' => 'request_example#products', via: :post
 
 end
+
+

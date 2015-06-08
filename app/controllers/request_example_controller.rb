@@ -14,4 +14,8 @@ class RequestExampleController < ApplicationController
     render json: params
   end
 
+  def products
+    render json: params
+  end
+
 end
