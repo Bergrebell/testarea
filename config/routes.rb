@@ -16,6 +16,11 @@ Rails.application.routes.draw do
   # example from http://www.hashcode.eti.br/?p=481
   match '/product' => 'request_example#products', via: :post
 
+  # example from http://www.ajax-tutor.com
+  match '/ajax' => 'ajax#post', via: :post
+  match '/ajax' => 'ajax#ajax', via: :get
+
+
 end
 
 
