@@ -8,12 +8,24 @@
 </div>
 
 
+<!-- Simple HTML Form -->
 <div>
-
-  <form action="/product" method="POST">
-    <input type="text" name="product[name]" value="Responsive Web Design with HTML5 and CSS3"/>
-    <input type="text" name="product[sku]" value="1849693188"/>
-    <input type="text" name="product[publisher]" value="Packt Publishing (April 10, 2012)"/>
+  <form id="buttons" action="/request" method="POST">
+    HTML:
+    <button name="feeling" type="submit" value="fine">Fine</button>
+    <button name="feeling" type="submit" value="neutral">Neutral</button>
+    <button name="feeling" type="submit" value="bad">Bad</button>
   </form>
-
 </div>
+
+<!-- Same Form via AJAX -->
+
+<div>
+  <form name="ajaxformname" id="ajaxform" action="/request" method="POST">
+    AJAX:
+    <input id="btn1" name="feeling" type="submit" value="Fine">
+    <input id="btn2" name="feeling" type="submit" value="Neutral">
+    <input id="btn3" name="feeling" type="submit" value="Bad">
+  </form>
+</div>
+

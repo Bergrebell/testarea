@@ -10,6 +10,4 @@ class AjaxController < ApplicationController
     render json: params
   end
 
-
-
 end
